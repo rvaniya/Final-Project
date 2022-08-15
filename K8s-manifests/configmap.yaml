@@ -4,4 +4,4 @@ metadata:
   name: webapp-condig
 data:
   IMAGE_URL_PATH: "/clo835/config/image_url"
-  IMAGE_URL_S3: "" 
+  IMAGE_URL_S3: "https://final-project-rahul.s3.amazonaws.com/success.jpg" 
