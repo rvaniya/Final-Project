@@ -6,8 +6,8 @@ metadata:
 subjects:
 - kind: ServiceAccount
   name: clo835
-  apiGroup: rbac.authorization.k8s.io
+  apiGroup: ""
 roleRef:
   kind: Role
-  name: pod-writer
-  apiGroup: rbac.authorization.k8s.io
+  name: admin
+  apiGroup: ""
