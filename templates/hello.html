@@ -2,7 +2,7 @@
 <title>Hello from Rahul</title>
 <body style="background: {{ color }};"></body>
 
-
+ <img src="https://final-project-rahul.s3.amazonaws.com/success.jpg" >
 
 <div style="color: #e4e4e4;
     text-align:  center;
@@ -12,7 +12,6 @@
   {% if db_connect_result %}
     <img src="{{ url_for('static', filename='img/success.jpg') }}">
     <h3> Successfully connected to the MySQL database.</h3>
-    <img src="https://final-project-rahul.s3.amazonaws.com/success.jpg" >
   {% else %}
     <img src="{{ url_for('static', filename='img/failed.png') }}">
     <h3> Failed connecting to the MySQL database. </h3>
