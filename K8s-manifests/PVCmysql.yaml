@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: mysql-pv
+  name: mysql-pvc
   annotations:
     storage-class: gp2
 spec:
