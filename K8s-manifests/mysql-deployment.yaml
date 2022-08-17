@@ -14,11 +14,21 @@ spec:
       labels:
         name: mysql
     spec:
+      serviceAccountName: clo835
       containers:
       - name: mysql
         image: mysql
+        volumeMounts:
+        - mountPath: /data/db
+          name: vol-mysql
         ports:
         - containerPort: 3306
+        env:
+        - name: DB_User
+          valueFrom:
+            secretKeyRef:
+              name: app-secret
+              key: DB_User
         env:
         - name: MYSQL_ROOT_PASSWORD
           valueFrom:
@@ -32,4 +42,3 @@ spec:
         - name: mysql-data
           persistentVolumeClaim:
             claimName: mysql-pvc
-            
